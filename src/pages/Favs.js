@@ -1,10 +1,11 @@
 import React from 'react'
 import { ListFavorites } from '../container/ListOfFavorites'
+import { HelmetLayout } from '../components/Helmet'
 
-export const Favs = () => {
+export default () => {
   return (
     <>
-      <h1>Favoritos</h1>
+      <HelmetLayout title='Tus Favoritos' subtitle='Aqui puedes encontrar tus favoritos' />
       <ListFavorites />
     </>
   )
