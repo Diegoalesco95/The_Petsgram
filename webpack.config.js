@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
 const WorkBoxWebpackPlugin = require('workbox-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const path = require('path')
 
@@ -17,24 +16,6 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()]
-    // splitChunks: {
-    //   chunks: 'async',
-    //   name: true,
-    //   cacheGroups: {
-    //     vendors: {
-    //       name: 'vendors',
-    //       chunks: 'all',
-    //       reuseExistingChunk: true,
-    //       priority: 1,
-    //       filename: 'dist/vendor.js',
-    //       enforce: true,
-    //       test(module, chunks) {
-    //         const name = module.nameForCondition && module.nameForCondition()
-    //         return chunks.some((chunk) => chunk.name !== 'vendors' && /[\\/]node_modules[\\/]/.test(name))
-    //       }
-    //     }
-    //   }
-    // }
   },
   module: {
     rules: [
@@ -87,11 +68,8 @@ module.exports = {
             cacheName: 'api'
           }
         }
-      ]
-    }),
-    new BundleAnalyzerPlugin({
-      analyzerMode: 'static',
-      analyzerPort: 3000
+      ],
+      maximumFileSizeToCacheInBytes: 5000000
     })
   ]
 }

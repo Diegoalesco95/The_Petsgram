@@ -4,17 +4,21 @@
   "description": "Proyecto de aprendizaje de React Avanzado",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "serve:dev": "webpack --mode production && npx serve dist -s",
     "lint": "standard",
+    "dev": "webpack-dev-server",
+    "serve:dev": "webpack --mode development && npx serve dist -s",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:pro": "webpack --mode production && npx serve dist -s",
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Diegoalesco95/The_instagram.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "apollo"
+  ],
   "author": "Diego Osorio <Diegoalesco95@hotmail.com>",
   "license": "MIT",
   "bugs": {
