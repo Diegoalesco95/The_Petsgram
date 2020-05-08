@@ -1,7 +1,5 @@
 # Petsgram, una app de fotos de animales
 
-------
-
 ¡Bienvenido y gracias por visitarme! Este es un proyecto elaborado como proyecto de aprendizaje de React.JS en [Platzi](https://platzi.com/cursos/react-avanzado/) en donde aplico varios de los conocimientos y habilidades adquiridas, entre ellas:
 
 - Preparar un bundle para enviar a producción con Webpack
@@ -13,9 +11,7 @@
 
 ## Tecnologías usadas
 
-------
-
-En este curso realizaremos una aplicación muy parecida a Instagram, llamada *petgram*. Tendremos nuestras rutas, gestión de usuarios y likes.
+En este curso realizaremos una aplicación muy parecida a Instagram, llamada _petgram_. Tendremos nuestras rutas, gestión de usuarios y likes.
 
 Utilizaremos como empaquetador y transpilador:
 
@@ -53,21 +49,17 @@ Por último haremos SEO, PWA y Deploy con:
 
 ## Vista de Home
 
-------
+
 
 ![Home Preview](/.readme-static/home_preview.png)
 
-## Vista del 
-
-------
+## Vista del Login
 
 ![Login Preview](/.readme-static/login_preview.png)
 
-## 											[Ver la aplicación](https://the-instagram.diegoalesco95.now.sh/)
+## [Ver la aplicación](https://the-petsgram.now.sh/)
 
 ## ¿Cómo funciona?
-
-------
 
 Si desea, clonar el proyecto es necesario contar con Node.JS 12.6.x y seguir las siguientes instrucciones.
 
@@ -77,12 +69,8 @@ Si desea, clonar el proyecto es necesario contar con Node.JS 12.6.x y seguir las
 
 ## Interacción con la App
 
-------
-
 Para usar todas las funciones de la app se requiere realizar un registro y luego iniciar sesión, luego se podrá interactuar completamente guardando las fotos en favoritos. Se debe aclarar que la cuenta registrada se eliminará automáticamente después de un tiempo por parte del API que almacena la información. También se puede filtrar las imágenes haciendo clic en cada una de las categorías mostradas en la parte superior y al hacer clic en las imágenes, será dirigido a la pagina de detalles de la foto.
 
 ## Licencia
 
 [MIT License](LICENSE)
-
- 
