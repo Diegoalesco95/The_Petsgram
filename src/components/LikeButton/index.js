@@ -8,7 +8,7 @@ export const LikeButton = ({ liked, likes, onClick }) => {
 
   return (
     <Button onClick={onClick} type='button'>
-      <Icon size='32px' /> {likes} likes!
+      <Icon size='32px' color='#e00086' /> {likes} likes!
     </Button>
   )
 }
